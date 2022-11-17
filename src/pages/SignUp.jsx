@@ -12,7 +12,7 @@ export default function SignUp() {
   return (
     <div>
       <div>
-        <p>로그인</p>
+        <p>회원가입</p>
         <p>
           환영합니다.
           <br />
