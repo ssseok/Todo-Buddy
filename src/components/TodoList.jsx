@@ -2,19 +2,19 @@ import React from "react";
 import Todo from "../components/Todo";
 import { useDispatch } from "react-redux";
 import TodoAdd from "../components/TodoAdd";
-import { addTodo, checkTodo, removeTodo } from "../actions";
+import { add, check, remove } from "../store";
 
 export default function TodoList({ todo, filter }) {
   console.log(todo);
   const dispatch = useDispatch();
   const handleAdd = (todo) => {
-    dispatch(addTodo(todo));
+    dispatch(add(todo));
   };
   const handleCheck = (update) => {
-    dispatch(checkTodo(update));
+    dispatch(check(update));
   };
   const handleDelete = (deleted) => {
-    dispatch(removeTodo(deleted));
+    dispatch(remove(deleted));
   };
 
   const filtered = getFilteredItems(todo, filter);
