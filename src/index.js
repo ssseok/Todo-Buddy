@@ -1,15 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
 import reportWebVitals from "./reportWebVitals";
 import store from "./store";
+import { ThemeProvider } from "styled-components";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+const darkThem = {
+  textColor: "whitesmoke",
+  bgColor: "#111",
+};
+
+const lightThem = {
+  textColor: "#111",
+  backgroundColor: "whitesmoke",
+};
 root.render(
   <Provider store={store}>
-    <App />
+    <ThemeProvider theme={lightThem}>
+      <App />
+    </ThemeProvider>
   </Provider>
 );
 

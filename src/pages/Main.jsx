@@ -5,14 +5,14 @@ import TodoList from "../components/TodoList";
 
 const filters = ["메인 페이지", "할 일 목록", "할 일 완료"];
 export default function Main() {
-  const state = useSelector((state) => state.todo);
+  const todo = useSelector((state) => state.todo);
 
   const [filter, setFilter] = useState(filters[0]);
 
   return (
     <div>
       <Header filters={filters} filter={filter} onFilterChange={setFilter} />
-      <TodoList todo={state} filter={filter} />
+      <TodoList todo={todo} filter={filter} />
     </div>
   );
 }
