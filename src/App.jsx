@@ -90,6 +90,11 @@ table {
 border-collapse: collapse;
 border-spacing: 0;
 }
+button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
 * {
   box-sizing: border-box;
 }
@@ -99,10 +104,25 @@ body {
   background-color: ${(props) => props.theme.bgColor};
   color: ${(props) => props.theme.textColor};
   line-height: 1.2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 a {
   text-decoration: none;
   color: inherit;
 }
 
+#root{
+  /* border: 3px solid ${(props) => props.theme.borderColor}; */
+  width: 35%;
+  height: 80%;
+  background-color: ${(props) => props.theme.rootBg};
+  border-radius: 1.5rem;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+box-shadow: 5px 5px 15px 5px #000000;
+}
 `;

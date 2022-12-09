@@ -37,7 +37,7 @@ export default function SignUp() {
       </div>
       <div>
         <button onClick={login}>회원가입</button>
-        <butto onClick={welcome}>나가기</butto>
+        <button onClick={welcome}>나가기</button>
       </div>
     </div>
   );

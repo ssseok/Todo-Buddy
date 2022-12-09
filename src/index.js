@@ -9,13 +9,18 @@ import { ThemeProvider } from "styled-components";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 const darkThem = {
-  textColor: "whitesmoke",
-  bgColor: "#111",
+  textColor: "#f5f6fa",
+  bgColor: "#f5f6fa",
+  rootBg: "#353b48",
+  borderColor: "#44bd32",
 };
 
 const lightThem = {
-  textColor: "#111",
-  backgroundColor: "whitesmoke",
+  textColor: "#2f3640",
+  bgColor: "#353b48",
+  rootBg: "#f5f6fa",
+  borderColor: "#4cd137",
+  bgBtn: "#D9D9D9",
 };
 root.render(
   <Provider store={store}>

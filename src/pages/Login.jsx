@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import styled from "styled-components";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -28,9 +29,19 @@ export default function Login() {
         <input id="2" type="text" />
       </div>
       <div>
-        <button onClick={main}>로그인</button>
-        <button onClick={welcome}>나가기</button>
+        <Btn onClick={main}>로그인</Btn>
+        <Btn onClick={welcome}>나가기</Btn>
       </div>
     </div>
   );
 }
+
+const Btn = styled.button`
+  background-color: ${(props) => props.theme.bgBtn};
+  color: ${(props) => props.theme.rootBg};
+  font-size: 24px;
+  border-radius: 0.8rem;
+  padding: 1rem;
+  margin: 1rem;
+  width: 20rem;
+`;

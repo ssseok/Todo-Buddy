@@ -2,7 +2,7 @@ import React from "react";
 import { FaTrashAlt } from "react-icons/fa";
 
 export default function Todo({ todo, onDelete, onCheck }) {
-  const { id, text, status } = todo;
+  const { text, status } = todo;
   console.log(text);
 
   const handleDelete = () => onDelete(todo);
