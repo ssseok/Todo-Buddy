@@ -38,7 +38,7 @@ const Wrap = styled.div`
 
 const ImgWrap = styled.div`
   display: flex;
-  margin-bottom: 10rem;
+  margin-bottom: 8rem;
 `;
 
 const Title = styled.h1`

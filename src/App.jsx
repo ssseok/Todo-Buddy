@@ -95,6 +95,11 @@ button {
   outline: none;
   background-color: transparent;
 }
+input {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+}
 * {
   box-sizing: border-box;
 }
