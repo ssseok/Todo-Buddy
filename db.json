@@ -1,0 +1,19 @@
+{
+  "todo": [
+    {
+      "id": "ab92143d-e21b-4d83-8d20-ea3c07ab0646",
+      "text": "asd",
+      "status": "할 일 목록"
+    },
+    {
+      "id": "e02b6005-fb1d-42c4-b04c-7e8a06936209",
+      "text": "dasd",
+      "status": "할 일 목록"
+    },
+    {
+      "id": "92d72bcd-42f4-42bf-a053-46699bc7d951",
+      "text": "as",
+      "status": "할 일 목록"
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import styled from "styled-components";
 import { v4 as uuidv4 } from "uuid";
 
 export default function TodoAdd({ onAdd }) {
   const [text, setText] = useState("");
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (text.trim().length === 0) {
@@ -15,14 +17,24 @@ export default function TodoAdd({ onAdd }) {
     setText(e.target.value);
   };
   return (
-    <form action="" onSubmit={handleSubmit}>
-      <input
+    <Form onSubmit={handleSubmit}>
+      <Input
         type="text"
         placeholder="할 일을 입력하세요."
         value={text}
         onChange={handleChange}
       />
       <button>Add</button>
-    </form>
+    </Form>
   );
 }
+
+const Form = styled.form`
+  display: flex;
+  justify-content: space-between;
+`;
+
+const Input = styled.input`
+  width: 100%;
+  padding: 1rem;
+`;

@@ -52,6 +52,7 @@ const Wrap = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 10%;
 `;
 
 const Img = styled.img`
@@ -87,12 +88,14 @@ export const ModalBackdrop = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
+  border-radius: 1.5rem;
 `;
 
 export const ModalView = styled.div`
-  background-color: var(--color-white);
+  background-color: ${(props) => props.theme.menuColor};
   width: 70%;
   height: 100%;
   position: absolute;
   right: 0;
+  border-radius: 1.5rem;
 `;
