@@ -39,7 +39,7 @@ export default function TodoList({ filter }) {
   const handleDelete = (deleted) =>
     setTodos(todos.filter((t) => t.id !== deleted.id));
   const handleUpdate = (updated, text) => {
-    setTodos(todos.map((el) => (el.id === updated.id ? { text } : el)));
+    setTodos(todos.map((el) => (el.id === updated.id ? text : el)));
   };
 
   useEffect(() => {

@@ -22,7 +22,7 @@ export default function Todo({ todo, onDelete, onCheck, onUpdate }) {
 
   const handleUpdate = () => {
     if (newTodo.trim().length === 0) return;
-    onUpdate(todo, newTodo.trim());
+    onUpdate(todo, { id, text: newTodo, status });
     handleToEditMode();
   };
 
@@ -39,7 +39,7 @@ export default function Todo({ todo, onDelete, onCheck, onUpdate }) {
         <>
           <input
             type="text"
-            defaultValue={newTodo}
+            value={newTodo}
             onChange={(e) => setNewTodo(e.target.value)}
           />
           <button onClick={handleUpdate}>수정완료</button>
