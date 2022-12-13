@@ -15,9 +15,9 @@ https://user-images.githubusercontent.com/87220944/207262124-b613f8b3-3588-4d79-
 - useState 로 json-server 통신으로 CRUD 구현
 - css 이쁘게 구현
 - 로그인,회원가입 서버 통신 및 구현
+- 코드 리팩토링
 
 ### 문제점
 
 - redux-toolkit 을 사용했지만, toolkit 에서 json-server 통신하는법 구현 ❌
 - useState 로 json-server 통신을 했지만 CRD 만 구현하여 로컬스토리지로 변경
-- css 구현 ❌
